@@ -2,7 +2,7 @@
 
 A real-time queue monitoring wallboard for Deltapath PBX systems. This application provides live visualization of call queues, agent status, and queue metrics.
 
-**GitHub Repository**: https://github.com/JohnPaul-223/Queue-Monitoring
+**GitHub Repository**: https://github.com/JohnPaul-223/QueueMonitoring
 
 ## Features
 

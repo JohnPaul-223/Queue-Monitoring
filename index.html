@@ -989,7 +989,7 @@
 const CONFIG = {
   // Deltapath server address, e.g. "https://pbx.yourcompany.local".
   // Leave "" if this file is served from the same host as Deltapath (recommended, avoids CORS).
-  // Server, username and password are entered on the login screen (not stored in this file).
+  // For Vercel deployment, leave empty to use the serverless proxy function.
   baseUrl: "",
   username: "",
   password: "",
@@ -1020,7 +1020,8 @@ const mmss = s => { s = Math.max(0, Math.round(s)); return String(Math.floor(s /
 /* ---------- Deltapath API ---------- */
 async function login() {
   if (!CONFIG.username) { state.loggedIn = true; return; }
-  const r = await fetch(CONFIG.baseUrl + API + "/post/auth/login", {
+  const apiUrl = CONFIG.baseUrl ? CONFIG.baseUrl + API + "/post/auth/login" : `/api/proxy?path=${encodeURIComponent(API + "/post/auth/login")}`;
+  const r = await fetch(apiUrl, {
     method: "POST", credentials: "include",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ userId: CONFIG.username, password: CONFIG.password, response: "1" })
@@ -1031,7 +1032,8 @@ async function login() {
 }
 
 async function api(path, retry = true) {
-  const r = await fetch(CONFIG.baseUrl + API + path, { credentials: "include" });
+  const apiUrl = CONFIG.baseUrl ? CONFIG.baseUrl + API + path : `/api/proxy?path=${encodeURIComponent(API + path)}`;
+  const r = await fetch(apiUrl, { credentials: "include" });
   if ((r.status === 401 || r.status === 403) && retry && CONFIG.username) {
     state.loggedIn = false; await login(); return api(path, false);
   }
