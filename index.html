@@ -956,10 +956,10 @@
       <div><h2>Deltapath Live Queue Monitor</h2><p>Enter your server credentials to start monitoring</p></div>
     </div>
 
-    <label class="f" for="srv">Server address</label>
-    <div class="inp">
+    <label class="f" for="srv" style="display:none;">Server address</label>
+    <div class="inp" style="display:none;">
       <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
-      <input id="srv" type="text" placeholder="https://uc-server.local" autocomplete="url" spellcheck="false">
+      <input id="srv" type="text" placeholder="https://uc-server.local" autocomplete="url" spellcheck="false" value="">
     </div>
 
     <label class="f" for="usr">ACL username</label>
@@ -980,7 +980,7 @@
 
     <button class="lbtn" id="lbtn" type="submit">Connect &amp; monitor</button>
     <div class="lerr" id="lerr"></div>
-    <div class="lnote">Leave the server blank if this page is hosted on the Deltapath server itself.</div>
+    <div class="lnote">Connected via secure proxy to pbx-datche.dbsone.com</div>
   </form>
 </div>
 
