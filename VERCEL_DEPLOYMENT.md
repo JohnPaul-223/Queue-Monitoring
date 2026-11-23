@@ -6,7 +6,7 @@
 
 2. **Import Project**:
    - Click "Add New..." → "Project"
-   - Select your GitHub repository: `JohnPaul-223/Deltapath_Live_Queue`
+   - Select your GitHub repository: `JohnPaul-223/Queue-Monitoring`
    - Click "Import"
 
 3. **Configure Project**:

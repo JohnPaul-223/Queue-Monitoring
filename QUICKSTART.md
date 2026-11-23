@@ -2,7 +2,7 @@
 
 ## ✅ Your Repository is Now on GitHub!
 
-**Repository URL**: https://github.com/JohnPaul-223/Deltapath_Live_Queue
+**Repository URL**: https://github.com/JohnPaul-223/Queue-Monitoring
 
 ---
 
@@ -17,7 +17,7 @@
 ### Step 2: Import Your Project
 1. Click the **"Add New..."** button (top right)
 2. Select **"Project"**
-3. Find and select **"Deltapath_Live_Queue"** from your repository list
+3. Find and select **"Queue-Monitoring"** from your repository list
 4. Click **"Import"**
 
 ### Step 3: Deploy
@@ -30,7 +30,7 @@
 3. Wait 30-60 seconds for deployment to complete
 4. Click the preview link to view your live site!
 
-Your app will be available at: `https://deltapath-live-queue.vercel.app` (or similar)
+Your app will be available at: `https://queue-monitoring.vercel.app` (or similar)
 
 ---
 
@@ -73,7 +73,7 @@ See `VERCEL_DEPLOYMENT.md` for detailed instructions on setting up a serverless 
 
 - **Full Deployment Guide**: See `VERCEL_DEPLOYMENT.md`
 - **Project README**: See `README.md`
-- **GitHub Repo**: https://github.com/JohnPaul-223/Deltapath_Live_Queue
+- **GitHub Repo**: https://github.com/JohnPaul-223/Queue-Monitoring
 - **Vercel Docs**: https://vercel.com/docs
 
 ---
